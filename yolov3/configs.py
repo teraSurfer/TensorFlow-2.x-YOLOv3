@@ -34,7 +34,7 @@ if YOLO_TYPE                == "yolov3":
                                [[30,  61], [62,   45], [59,  119]],
                                [[116, 90], [156, 198], [373, 326]]]
 # Train options
-TRAIN_YOLO_TINY             = False
+TRAIN_YOLO_TINY             = True
 TRAIN_SAVE_BEST_ONLY        = True # saves only best model according validation loss (True recommended)
 TRAIN_SAVE_CHECKPOINT       = False # saves all best validated checkpoints in training process (may require a lot disk space) (False recommended)
 TRAIN_CLASSES               = "mnist/mnist.names"
@@ -51,7 +51,7 @@ TRAIN_FROM_CHECKPOINT       = False # "checkpoints/yolov3_custom"
 TRAIN_LR_INIT               = 1e-4
 TRAIN_LR_END                = 1e-6
 TRAIN_WARMUP_EPOCHS         = 2
-TRAIN_EPOCHS                = 100
+TRAIN_EPOCHS                = 5
 
 # TEST options
 TEST_ANNOT_PATH             = "mnist/mnist_test.txt"
